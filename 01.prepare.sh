@@ -19,6 +19,7 @@ cd ..
 rm -rf release
 mkdir release
 cp -rf sources/blast/bin/blastn release
+cp -rf sources/blast/bin/tblastn release
 cp -rf sources/blast/bin/tblastx release
 cp -rf sources/blast/bin/makeblastdb release
 
