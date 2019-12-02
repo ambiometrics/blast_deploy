@@ -6,7 +6,7 @@ rm -rf sources
 mkdir sources && cd sources
 
 #download the linux binary
-wget -O blast.tar.gz ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.9.0+-x64-linux.tar.gz
+wget -O blast.tar.gz ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.9.0+-x64-win64.tar.gz
 
 #unzip mafft
 rm -rf blast
@@ -18,7 +18,7 @@ tar xvfz blast.tar.gz -C blast --strip-components 1
 cd ..
 rm -rf release
 mkdir release
-cp -rf sources/blast/bin/blastn release
-cp -rf sources/blast/bin/tblastx release
-cp -rf sources/blast/bin/makeblastdb release
+cp -rf sources/blast/bin/blastn.exe release
+cp -rf sources/blast/bin/tblastx.exe release
+cp -rf sources/blast/bin/makeblastdb.exe release
 
